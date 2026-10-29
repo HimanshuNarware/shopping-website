@@ -13,7 +13,6 @@ export const App: React.FC = () => {
           <Route path="/" element={<ProductListingPage />} />
           <Route path="/product/:id" element={<ProductDetailPage />} />
           <Route path="/cart" element={<CartPage />} />
-          {/* Redirect unknown routes back to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
